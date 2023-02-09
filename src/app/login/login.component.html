@@ -1,10 +1,37 @@
-<p>login works!</p>
-<div>
-    <div>
-        <input placeholder="שם משתמש" />
-    </div><br>
-    <div>
-        <input placeholder="סיסמה" />
+<div class="text-center justify-content-center mx-auto row">
+    <div class="col col-sm-2 col-md-5 col-lg-4 col-xl-2 card">
+        <h3>כניסה</h3>
+        <form class="container mx-auto">
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"
+                oninput="this.value = this.value.replace(/[^a-zA-Z0-9]/g,'').replace(/(\..*)\./g, '$1');">
+                <label for="floatingInput">שם משתמש</label>
+            </div>
+            <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="סיסמה">
+                <label for="floatingPassword">סיסמה</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
     </div>
-
 </div>
+
+    <!-- <div>
+        <div class="row justify-content-center">
+            <div class="col col-sm-2 col-md-5 col-lg-4 col-xl-2 ">
+                <form #codeForm class="container mx-auto"
+                    style="margin-top: 100px; border: 10px; border-radius: 5px;border-color: black;">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="loginUserName" name="loginUserName"
+                            oninput="this.value = this.value.replace(/[^a-zA-Z0-9]/g,'').replace(/(\..*)\./g, '$1');">
+                        <label for="floatingInput">שם משתמש</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="password" class="form-control" id="loginPassword" name="loginPassword"
+                            oninput="this.value = this.value.replace(/[^a-zA-Z0-9]/g,'').replace(/(\..*)\./g, '$1');">
+                        <label for="floatingPassword">סיסמה</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div> -->
